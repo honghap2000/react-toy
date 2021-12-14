@@ -17,7 +17,7 @@ function MovieShow() {
     useEffect(() => {
         getMovies();
     }, []);
-    console.log(movies);
+    // console.log(movies);
     
     return (
       <div>
@@ -28,6 +28,7 @@ function MovieShow() {
             {movies.map((movie) => (
               <Movie
                 key={movie.id}
+                id={movie.id}
                 mediumCoverImage={movie.medium_cover_image}
                 title={movie.title}
                 summary={movie.summary}
