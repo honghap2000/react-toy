@@ -31,9 +31,9 @@ function Detail() {
             <img src={movie.medium_cover_image} alt={movie.title} />
             <h2>{movie.title}</h2>
             <ul>
-              {/* {movie.genres.map((g, index) => (
+              {movie.genres && movie.genres.map((g, index) => (
                 <li key={index}>{g}</li>
-              ))} */}
+              ))}
             </ul>
           </div>
         )}
